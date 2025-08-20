@@ -6,26 +6,32 @@ def calculate(list): #função para calcular os valores pedidos
 
     matriz = np.array(list).reshape(3,3) #transforma a lista em uma matriz 3x3
 
+    #Exercico 1.1
     mean_axis0 = matriz.mean(axis=0).tolist() #calcula a média dos valores da matriz por linha
     mean_axis1 = matriz.mean(axis=1).tolist() #calcula a média dos valores da matriz por coluna
     mean_flattened = matriz.mean().tolist() #calcula a média dos valores da matriz
 
+    #Exercico 1.2
     var_axis0 = matriz.var(axis=0).tolist() #calcula a variância dos valores da matriz por linha
     var_axis1 = matriz.var(axis=1).tolist() #calcula a variância dos valores da matriz por coluna
     var_flattened = matriz.var().tolist() #calcula a variância dos valores da matriz
 
+    #Exercico 1.3
     std_axis0 = matriz.std(axis=0).tolist() #calcula o desvio padrão dos valores da matriz por linha
     std_axis1 = matriz.std(axis=1).tolist() #calcula o desvio padrão dos valores da matriz por coluna
     std_flattened = matriz.std().tolist()   #calcula o desvio padrão dos valores da matriz
 
+    #Exercico 1.4
     max_axis0 = matriz.max(axis=0).tolist() #calcula o valor máximo dos valores da matriz por linha
     max_axis1 = matriz.max(axis=1).tolist() #calcula o valor máximo dos valores da matriz por coluna
     max_flattened = matriz.max().tolist() #calcula o valor máximo dos valores da matriz
 
+    #Exercico 1.5
     min_axis0 = matriz.min(axis=0).tolist() #calcula o valor mínimo dos valores da matriz por linha
     min_axis1 = matriz.min(axis=1).tolist() #calcula o valor mínimo dos valores da matriz por coluna
     min_flattened = matriz.min().tolist() #calcula o valor mínimo dos valores da matriz
 
+    #Exercico 1.6
     sum_axis0 = matriz.sum(axis=0).tolist() #calcula a soma dos valores da matriz por linha
     sum_axis1 = matriz.sum(axis=1).tolist() #calcula a soma dos valores da matriz por coluna
     sum_flattened = matriz.sum().tolist() #calcula a soma dos valores da matriz
