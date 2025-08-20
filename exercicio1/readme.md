@@ -8,12 +8,12 @@ The input of the function should be a list containing 9 digits. The function sho
 The returned dictionary should follow this format:
 ```python
 {
-  'mean': [axis1, axis2, flattened],
-  'variance': [axis1, axis2, flattened],
-  'standard deviation': [axis1, axis2, flattened],
-  'max': [axis1, axis2, flattened],
-  'min': [axis1, axis2, flattened],
-  'sum': [axis1, axis2, flattened]
+  'mean': [axis1, axis2, flattened], #Exercício 1.1
+  'variance': [axis1, axis2, flattened], #Exercício 1.2
+  'standard deviation': [axis1, axis2, flattened], #Exercício 1.3
+  'max': [axis1, axis2, flattened], #Exercício 1.4
+  'min': [axis1, axis2, flattened], #Exercício 1.5
+  'sum': [axis1, axis2, flattened] #Exercício 1.6
 }
 ```
 If a list containing less than 9 elements is passed into the function, it should raise a ```ValueError``` exception with the message: "List must contain nine numbers." The values in the returned dictionary should be lists and not Numpy arrays.
@@ -31,4 +31,4 @@ For example, ```calculate([0,1,2,3,4,5,6,7,8])``` should return:
 }
 ```
 
-Link GitPod: https://gitpod.io#snapshot/4978448f-7dce-4d27-ab34-bf52c1e84de1
+Link GitPod: https://gitpod.io#snapshot/e1e05c5a-9b6b-48df-965f-84389f3d22e4
