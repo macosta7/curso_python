@@ -27,30 +27,30 @@ Create a chart similar to ```examples/Figure_1.png```, where we show the counts 
 
 By each number in the ```medical_data_visualizer.py``` file, add the code from the associated instruction number below.
 
-1. Import the data from ```medical_examination.csv``` and assign it to the ```df``` variable.
-2. Add an ```overweight``` column to the data. To determine if a person is overweight, first calculate their BMI by dividing their weight in kilograms by the square of their height in meters. If that value is > 25 then the person is overweight. Use the value ```0``` for NOT overweight and the value ```1``` for overweight.
-3. Normalize data by making ```0``` always good and ```1``` always bad. If the value of ```cholesterol``` or ```gluc``` is 1, set the value to ```0```. If the value is more than ```1```, set the value to ```1```.
-4. Draw the Categorical Plot in the ```draw_cat_plot``` function.
-5. Create a DataFrame for the cat plot using ```pd.melt``` with values from ```cholesterol```, ```gluc```, ```smoke```, ```alco```, ```active```, and ```overweight``` in the ```df_cat``` variable.
-6. Group and reformat the data in ```df_cat``` to split it by ```cardio```. Show the counts of each feature. You will have to rename one of the columns for the ```catplot``` to work correctly.
-7. Convert the data into ```long``` format and create a chart that shows the value counts of the categorical features using the following method provided by the seaborn library import: ```sns.catplot()```.
-8. Get the figure for the output and store it in the ```fig``` variable.
+1. Import the data from ```medical_examination.csv``` and assign it to the ```df``` variable. **(Exercicio 3.1)**
+2. Add an ```overweight``` column to the data. To determine if a person is overweight, first calculate their BMI by dividing their weight in kilograms by the square of their height in meters. If that value is > 25 then the person is overweight. Use the value ```0``` for NOT overweight and the value ```1``` for overweight. **(Exercicio 3.2)**
+3. Normalize data by making ```0``` always good and ```1``` always bad. If the value of ```cholesterol``` or ```gluc``` is 1, set the value to ```0```. If the value is more than ```1```, set the value to ```1```. **(Exercicio 3.3)**
+4. Draw the Categorical Plot in the ```draw_cat_plot``` function. **(Exercicio 3.4)**
+5. Create a DataFrame for the cat plot using ```pd.melt``` with values from ```cholesterol```, ```gluc```, ```smoke```, ```alco```, ```active```, and ```overweight``` in the ```df_cat``` variable. **(Exercicio 3.5)**
+6. Group and reformat the data in ```df_cat``` to split it by ```cardio```. Show the counts of each feature. You will have to rename one of the columns for the ```catplot``` to work correctly. **(Exercicio 3.6)**
+7. Convert the data into ```long``` format and create a chart that shows the value counts of the categorical features using the following method provided by the seaborn library import: ```sns.catplot()```. **(Exercicio 3.7)**
+8. Get the figure for the output and store it in the ```fig``` variable. **(Exercicio 3.8)**
 9. Do not modify the next two lines.
-10. Draw the Heat Map in the ```draw_heat_map``` function.
-11. Clean the data in the ```df_heat``` variable by filtering out the following patient segments that represent incorrect data:
-    - diastolic pressure is higher than systolic (Keep the correct data with ```(df['ap_lo'] <= df['ap_hi'])```)
-    - height is less than the 2.5th percentile (Keep the correct data with ```(df['height'] >= df['height'].quantile(0.025))```)
-    - height is more than the 97.5th percentile
-    - weight is less than the 2.5th percentile
-    - weight is more than the 97.5th percentile
-12. Calculate the correlation matrix and store it in the ```corr``` variable.
-13. Generate a mask for the upper triangle and store it in the ```mask``` variable.
-14. Set up the ```matplotlib``` figure.
-15. Plot the correlation matrix using the method provided by the ```seaborn``` library import: ```sns.heatmap()```.
+10. Draw the Heat Map in the ```draw_heat_map``` function. **(Exercicio 3.9)**
+11. Clean the data in the ```df_heat``` variable by filtering out the following patient segments that represent incorrect data: **(Exercicio 3.10)**
+    - diastolic pressure is higher than systolic (Keep the correct data with ```(df['ap_lo'] <= df['ap_hi'])```) **(Exercicio 3.10.1)**
+    - height is less than the 2.5th percentile (Keep the correct data with ```(df['height'] >= df['height'].quantile(0.025))```) **(Exercicio 3.10.2)**
+    - height is more than the 97.5th percentile **(Exercicio 3.10.3)**
+    - weight is less than the 2.5th percentile **(Exercicio 3.10.4)**
+    - weight is more than the 97.5th percentile **(Exercicio 3.10.5)**
+12. Calculate the correlation matrix and store it in the ```corr``` variable. **(Exercicio 3.11)**
+13. Generate a mask for the upper triangle and store it in the ```mask``` variable. **(Exercicio 3.12)**
+14. Set up the ```matplotlib``` figure. **(Exercicio 3.13)**
+15. Plot the correlation matrix using the method provided by the ```seaborn``` library import: ```sns.heatmap()```. **(Exercicio 3.14)**
 16. Do not modify the next two lines.
 
 Write your code in ```medical_data_visualizer.py```. For development, you can use ```main.py``` to test your code.
 
 The unit tests for this project are in ```test_module.py```. We imported the tests from ```test_module.py``` to ```main.py``` for your convenience.
 
-Link GitPod: 
+Link GitPod: https://gitpod.io#snapshot/2a7d284c-2f76-4788-b1a6-fc03c2c0c987
