@@ -13,7 +13,7 @@ df = None
 
 def draw_line_plot():
     # Draw line plot
-
+    fig = None
 
 
 
@@ -28,7 +28,7 @@ def draw_bar_plot():
 
     # Draw bar plot
 
-
+    fig = None
 
 
 
@@ -45,7 +45,7 @@ def draw_box_plot():
 
     # Draw box plots (using Seaborn)
 
-
+    fig = None
 
 
 
